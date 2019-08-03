@@ -71,6 +71,7 @@ void main(void)
     {
         // Add your application code
         IO_RA0_Toggle();
+        
         __delay_ms(500);
     }
 }
