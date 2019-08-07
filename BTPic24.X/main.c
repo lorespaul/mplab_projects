@@ -5,7 +5,7 @@
 #include "USB/usb.h"
 #include "USB/usb_host_generic.h"
 #include "user.h"
-#include "timer.h"
+#include "Common/timer.h"
 
 //#define DEBUG_MODE
 // *****************************************************************************
@@ -546,7 +546,7 @@ void ManageDemoState ( void )
         break;
     }
     
-    //DelayMs(1); // 1ms delay
+    DelayMs(1); // 1ms delay
 
 } // ManageDemoState
 
@@ -592,7 +592,7 @@ BOOL USB_ApplicationEventHandler ( BYTE address, USB_EVENT event, void *data, DW
     #endif
 
     // Handle specific events.
-    switch (event)
+    switch ((int)event)
     {
         case EVENT_GENERIC_ATTACH:
             if (size == sizeof(GENERIC_DEVICE_ID))

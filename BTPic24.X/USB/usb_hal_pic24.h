@@ -384,7 +384,7 @@ typedef union __BDT
     {
         struct
         {
-            BYTE CNT         __attribute__ ((packed));
+            BYTE CNT;//         __attribute__ ((packed));
             BD_STAT     STAT __attribute__ ((packed));
         };
         struct

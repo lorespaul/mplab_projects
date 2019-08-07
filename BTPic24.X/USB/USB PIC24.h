@@ -32,6 +32,9 @@ KO/BC       2-20-2008   Initial Creation
 
 *******************************************************************************/
 
+#ifndef __USB_PIC24_H
+#define __USB_PIC24_H
+
 // To Do:  Put all PIC24-specific USB HW definitions here,
 
 #if defined(USB_SUPPORT_HOST) && !defined(USB_SUPPORT_OTG)
@@ -216,3 +219,6 @@ typedef union __BDT
 #define USB_PING_PONG__NO_PING_PONG         0x00    // U1CFG1 - No ping-pong
 
 #endif
+
+
+#endif /* __USB_PIC24_H */
