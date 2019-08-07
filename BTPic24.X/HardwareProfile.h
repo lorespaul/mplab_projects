@@ -46,7 +46,7 @@
 
 #if defined(__PIC24F__) || defined(__PIC24H__)
     #include <p24fxxxx.h>
-    #include <uart2.h>
+    #include "Common/uart2.h"
 #else
     #include <p32xxxx.h>
     #include <plib.h>
@@ -58,7 +58,7 @@
 #define INPUT_PIN           1
 #define OUTPUT_PIN          0
 
-
+//#define __PIC24FJ256GB110__
 #if defined (__C30__)
     #if defined(__PIC24FJ256GB110__)
     	// LCD Module I/O pins
@@ -102,7 +102,7 @@
         #define sw6_bit             IOPORT_BIT_7
         #define sw6_port            PORTD
 
-    #elif defined(__PIC24FJ64GB004__)
+    #elif defined(__PIC24FJ64GB002__)
     	// LCD Module I/O pins
     	#define LCD_DATA0_TRIS		(TRISBbits.TRISB0)		// Multiplexed with LED6
     	#define LCD_DATA0_IO		(LATBbits.LATB0)

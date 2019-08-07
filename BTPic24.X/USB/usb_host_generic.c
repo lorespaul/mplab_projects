@@ -58,13 +58,13 @@ BC/KO       25-Dec-2007 First release
 
 #include <stdlib.h>
 #include <string.h>
-#include "GenericTypeDefs.h"
-#include "USB\usb.h"
-#include "USB\usb_host_generic.h"
+#include "../Common/GenericTypeDefs.h"
+#include "usb.h"
+#include "usb_host_generic.h"
 
 //#define DEBUG_MODE
 //#ifdef DEBUG_MODE
-    #include "uart2.h"
+    #include "../Common/uart2.h"
 //#endif
 
 #define USB_GENERIC_EP2 2 //YTS

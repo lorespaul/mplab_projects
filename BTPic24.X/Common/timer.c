@@ -1,6 +1,6 @@
 #include "Compiler.h"
 #include "timer.h"
-#include "HardwareProfile.h"
+#include "../HardwareProfile.h"
 
 #define __DELAY_C
 

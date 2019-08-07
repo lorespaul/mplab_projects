@@ -56,16 +56,16 @@ KO/BC       15-Oct-2007 First release
 
 #include <stdlib.h>
 #include <string.h>
-#include "GenericTypeDefs.h"
-#include "USB\usb.h"
+#include "../Common/GenericTypeDefs.h"
+#include "usb.h"
 #include "usb_host_local.h"
 #include "usb_hal_local.h"
-#include "HardwareProfile.h"
-#include "USB\usb_hal.h"
-#include "timer.h"
+#include "../HardwareProfile.h"
+#include "usb_hal.h"
+#include "../Common/timer.h"
 
 #if defined( USB_ENABLE_TRANSFER_EVENT )
-    #include "struct_queue.h"
+    #include "../Common/struct_queue.h"
 #endif
 
 //#define DEBUG_MODE

@@ -87,7 +87,7 @@ Description:
 #if defined(USB_SUPPORT_HOST) || defined(USB_SUPPORT_OTG)
 
 #if defined(__C30__)
-    #include "USB\usb_hal_pic24.h"
+    #include "usb_hal_pic24.h"
 
 #elif defined(__PIC32MX__)
     #include "USB\usb_hal_pic32.h"
@@ -634,7 +634,7 @@ BOOL USBHALInitialize ( unsigned long flags );
     #if defined(__18CXX)
         #include "USB\usb_hal_pic18.h"
     #elif defined(__C30__)
-        #include "USB\usb_hal_pic24.h"
+        #include "usb_hal_pic24.h"
     #elif defined(__PIC32MX__)
         #include "USB\usb_hal_pic32.h"
     #endif

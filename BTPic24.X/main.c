@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "GenericTypeDefs.h"
+#include "Common/GenericTypeDefs.h"
 #include "HardwareProfile.h"
 #include "usb_config.h"
 #include "USB/usb.h"
@@ -545,8 +545,8 @@ void ManageDemoState ( void )
         DemoState = BT_INITIALIZE;
         break;
     }
-
-    DelayMs(1); // 1ms delay
+    
+    //DelayMs(1); // 1ms delay
 
 } // ManageDemoState
 

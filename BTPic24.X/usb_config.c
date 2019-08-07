@@ -35,10 +35,10 @@ DEFENSE THEREOF), OR OTHER SIMILAR COSTS.
 
 // Created by the Microchip USBConfig Utility, Version 1.0.6.0, 3/7/2010, 12:18:06
 
-#include "GenericTypeDefs.h"
+#include "Common/GenericTypeDefs.h"
 #include "HardwareProfile.h"
-#include "USB\usb.h"
-#include "USB\usb_host_generic.h"
+#include "USB/usb.h"
+#include "USB/usb_host_generic.h"
 
 // *****************************************************************************
 // Client Driver Function Pointer Table for the USB Embedded Host foundation

@@ -100,6 +100,9 @@ Description:
 //DOM-IGNORE-END
 
 
+#ifndef __USB_HAL_PIC24_H
+#define __USB_HAL_PIC24_H
+
 #if defined(USB_SUPPORT_DEVICE) | defined(USB_SUPPORT_OTG)
 
 #include "Compiler.h"
@@ -404,3 +407,5 @@ typedef union __BDT
         extern volatile BDT_ENTRY *pBDTEntryIn[USB_MAX_EP_NUMBER+1];
     #endif
 #endif
+
+#endif /* __USB_HAL_PIC24_H */
