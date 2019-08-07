@@ -1289,7 +1289,9 @@ void USBHostTasks( void )
             interrupt_mask = U1IE;
             U1IE = 0;
 
-            StructQueueRemove(&usbEventQueue, USB_EVENT_QUEUE_DEPTH);
+            if(!StructQueueRemove(&usbEventQueue, USB_EVENT_QUEUE_DEPTH)){
+                UART2PrintString( "Error removing event from queue.\r\n" );
+            }
 
             // Re-enable USB interrupts
             U1IE = interrupt_mask;
